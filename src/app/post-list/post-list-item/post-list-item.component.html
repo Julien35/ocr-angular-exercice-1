@@ -11,8 +11,8 @@
     <div>{{post.content}}</div>
 
     <div class="d-flex">
-        <button (click)="loveIts()" class="btn btn-success btn-sm mr-2">Love it!</button>
-        <button (click)="dontLoveIts()" class="btn btn-danger btn-sm">Don't love it!</button>
+        <button (click)="onLoveIts(post)" class="btn btn-success btn-sm mr-2">Love it!</button>
+        <button (click)="onDontLoveIts(post)" class="btn btn-danger btn-sm">Don't love it!</button>
+        <button (click)="onDeletePost(post)" class="btn btn-default btn-sm pull-right">Supprimer post</button>
     </div>
 </li>
-
