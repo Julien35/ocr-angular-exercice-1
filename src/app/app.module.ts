@@ -11,6 +11,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {PostService} from './services/post.service';
 import { PostFormComponent } from './post-list/post-form/post-form.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -24,6 +25,8 @@ import { PostFormComponent } from './post-list/post-form/post-form.component';
     imports: [
         BrowserModule,
         AppRoutingModule,
+        FormsModule,
+        ReactiveFormsModule,
         NgbModule,
         HttpClientModule,
         FontAwesomeModule
