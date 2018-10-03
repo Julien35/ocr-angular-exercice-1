@@ -10,9 +10,13 @@
     </div>
     <div>{{post.content}}</div>
 
-    <div class="d-flex">
-        <button (click)="onLoveIts(post)" class="btn btn-success btn-sm mr-2">Love it!</button>
-        <button (click)="onDontLoveIts(post)" class="btn btn-danger btn-sm">Don't love it!</button>
-        <button (click)="onDeletePost(post)" class="btn btn-default btn-sm pull-right">Supprimer post</button>
+    <div class="d-flex justify-content-between">
+        <div>
+            <button (click)="onLoveIts(post)" class="btn btn-success btn-sm mr-2">Love it!</button>
+            <button (click)="onDontLoveIts(post)" class="btn btn-danger btn-sm">Don't love it!</button>
+        </div>
+        <div>
+            <button (click)="onDeletePost(post)" class="btn btn-danger btn-sm">Supprimer post</button>
+        </div>
     </div>
 </li>
