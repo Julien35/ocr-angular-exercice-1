@@ -1,18 +1,14 @@
 <nav class="navbar navbar-expand navbar-light bg-light">
 
-    <!--<div class="">-->
-
-        <ul class="navbar-nav mr-auto">
-
-            <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" routerLink="posts">Posts</a>
-            </li>
-            <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" routerLink="posts/new">Nouveau post</a>
-            </li>
-
-        </ul>
-
-    <!--</div>-->
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact:true}">
+            <a class="nav-link" routerLink="posts">Posts</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact:true}">
+            <a class="nav-link" routerLink="posts/new">Nouveau post</a>
+        </li>
+    </ul>
 
 </nav>
