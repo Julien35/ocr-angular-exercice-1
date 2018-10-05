@@ -10,8 +10,12 @@ import {HeaderComponent} from './header/header.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {PostService} from './services/post.service';
-import { PostFormComponent } from './post-list/post-form/post-form.component';
+import {PostFormComponent} from './post-list/post-form/post-form.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {SignupComponent} from './auth/signup/signup.component';
+import {SigninComponent} from './auth/signin/signin.component';
+import {AuthService} from './services/auth.service';
+import {AuthGuardService} from './services/auth-guard.service';
 
 
 @NgModule({
@@ -20,7 +24,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
         PostListComponent,
         PostListItemComponent,
         HeaderComponent,
-        PostFormComponent
+        PostFormComponent,
+        SignupComponent,
+        SigninComponent
     ],
     imports: [
         BrowserModule,
@@ -32,7 +38,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
         FontAwesomeModule
     ],
     providers: [
-        PostService
+        PostService,
+        AuthService,
+        AuthGuardService
     ],
     bootstrap: [AppComponent]
 })
